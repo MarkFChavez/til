@@ -1,13 +1,2 @@
-@import "bootstrap-overrides";
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-// Base
-@import "base";
-
-// Layouts
-@import "layout/header";
-
-// Components
-@import "stuff_list";
