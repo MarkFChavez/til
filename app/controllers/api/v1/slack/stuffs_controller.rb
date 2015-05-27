@@ -34,14 +34,10 @@ class Api::V1::Slack::StuffsController < ActionController::Base
   end
 
   def slack_response(message)
-    {
-      text: message
-    }
+    { text: message }
   end
 
   def stuff_content
-    {
-      content: stuff_params[:text].remove(stuff_params[:trigger_word])
-    }
+    { content: stuff_params[:text].remove(stuff_params[:trigger_word]) }
   end
 end
