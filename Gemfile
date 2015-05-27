@@ -10,6 +10,8 @@ group :production do
   gem 'pg'
 end
 
+gem 'rack-cors', :require => 'rack/cors'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use SCSS for stylesheets
