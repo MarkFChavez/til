@@ -5,6 +5,7 @@ group :development do
   gem 'rspec-rails'
   gem 'capybara'
 end
+gem 'pry', '~> 0.10.1'
 
 group :production do
   gem 'pg'
