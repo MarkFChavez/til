@@ -6,10 +6,20 @@
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
     %meta{:name => "description", :content => "A curated post of things that we learned from web development"}
     %meta{:name => "author", :content => "You_Source Developers"}
-    %title Today I Learned - Awesome
+    %title Today I Learned
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    -# = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.css'
     = csrf_meta_tags
+
   %body
-    = render 'layouts/header'
-    = yield
+    .container
+      .row.padding15
+        .col-lg-6.col-lg-offset-3
+          %h1
+            TIL. 
+            %small today I learned
+
+          = yield
+
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    -# = javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.js'
