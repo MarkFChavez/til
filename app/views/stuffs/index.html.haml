@@ -1,10 +1,14 @@
-- @stuffs.each do |day, stuffs|
-  .row.top30
-    .col-lg-12
-      %span.lead.text-success= render_day(day)
+- if @stuffs.any?
+  - @stuffs.each do |day, stuffs|
+    .row.top30
+      .col-lg-12
+        %span.lead.text-success= render_day(day)
 
-  %hr
-  
-  .row.top10
+    .row.top10
+      .col-lg-12
+        = render(stuffs) || "Go learn something!"
+
+- else
+  .row.top30.text-center
     .col-lg-12
-      = render(stuffs) || "Go learn something!"
+      %span.lead.italic Get out and learn something!
