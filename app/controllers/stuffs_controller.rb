@@ -1,5 +1,5 @@
 class StuffsController < ApplicationController
   def index
-    @stuffs = Stuff.all
+    @stuffs = Stuff.all.group_by { |s| s.created_at.beginning_of_day }
   end
 end

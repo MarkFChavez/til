@@ -4,8 +4,8 @@ group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'pry', '~> 0.10.1'
 end
-gem 'pry', '~> 0.10.1'
 
 group :production do
   gem 'pg'
@@ -22,4 +22,5 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'haml'

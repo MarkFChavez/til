@@ -1,8 +1,10 @@
-.row.top50
-  .col-lg-12
-    %span.text-success LATEST
-    %hr
+- @stuffs.each do |day, stuffs|
+  .row.top30
+    .col-lg-12
+      %span.lead.text-success= render_day(day)
 
-.row.top10
-  .col-lg-12
-    = render(@stuffs) || "Go learn something!"
+  %hr
+  
+  .row.top10
+    .col-lg-12
+      = render(stuffs) || "Go learn something!"
